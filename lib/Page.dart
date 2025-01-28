@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'Page1.dart'; // นำเข้าไฟล์ Page1
 import 'Page2.dart'; // นำเข้าไฟล์ Page2
@@ -12,6 +14,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -79,6 +83,8 @@ class HomeScreen extends StatelessWidget {
     },
   ];
 
+  HomeScreen({super.key});
+
   @override
 Widget build(BuildContext context) {
   return Scaffold(
@@ -99,7 +105,7 @@ Widget build(BuildContext context) {
             ),
           ),
           // ใช้ ListView.builder แนวนอนสำหรับเมนูอาหาร
-          Container(
+          SizedBox(
             height: 250, // เพิ่มความสูงของพื้นที่สำหรับแสดงรายการอาหาร
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
@@ -116,7 +122,7 @@ Widget build(BuildContext context) {
                       elevation: 8.0,
                       margin: EdgeInsets.symmetric(horizontal: 12.0),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                      child: Container(
+                      child: SizedBox(
                         width: 200,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -157,7 +163,7 @@ Widget build(BuildContext context) {
             ),
           ),
           // ใช้ ListView.builder แนวนอนสำหรับเมนูของว่าง
-          Container(
+          SizedBox(
             height: 250,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
@@ -174,7 +180,7 @@ Widget build(BuildContext context) {
                       elevation: 8.0,
                       margin: EdgeInsets.symmetric(horizontal: 12.0),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                      child: Container(
+                      child: SizedBox(
                         width: 200,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,

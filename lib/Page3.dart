@@ -1,7 +1,11 @@
+// ignore: file_names
+// ignore_for_file: library_private_types_in_public_api, deprecated_member_use, file_names
+
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Page3 extends StatefulWidget {
+  // ignore: prefer_const_constructors_in_immutables, use_super_parameters
   Page3({Key? key, required this.title}) : super(key: key);
 
   final String title;
@@ -20,7 +24,6 @@ class _Page3State extends State<Page3> {
     // ใช้ launchUrl แทน launch
     if (await canLaunch(url.toString())) {  // ตรวจสอบว่า URL สามารถเปิดได้หรือไม่
       await launchUrl(url); // เปิด URL
-      print('เปิด URL สำเร็จ');
     } else {
       throw 'ไม่สามารถเปิด URL ได้: $url';
     }
@@ -141,6 +144,7 @@ void main() {
   runApp(MyApp());
 }
 
+// ignore: use_key_in_widget_constructors
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
