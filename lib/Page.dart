@@ -8,7 +8,7 @@ import 'Page6.dart'; // นำเข้าไฟล์ Page6
 import 'Page7.dart'; // นำเข้าไฟล์ Page7
 
 void main() {
-  runApp(MyApp())
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
