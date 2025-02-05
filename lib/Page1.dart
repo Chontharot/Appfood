@@ -1,7 +1,7 @@
 // ignore: file_names
 // ignore_for_file: file_names
 
-import 'package:flutter/material.dart';
+importdd 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Page1 extends StatefulWidget {
